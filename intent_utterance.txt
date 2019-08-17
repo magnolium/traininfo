@@ -1,0 +1,32 @@
+[intentDestinationTrains]
+about trains to {STATION}
+which trains are going to {STATION}
+for any  trains going to {STATION}
+for trains that are going to {STATION}
+for trains going to {STATION}
+what trains are going to {STATION}
+
+[intentDestination]
+what is the next train to {STATION}
+when is the next train to {STATION}
+for the next train to {STATION}
+
+[intentTimetable]
+for status
+for status on {DIRECTION}
+for {DIRECTION} timetable
+for latest on {DIRECTION}
+for data on {DIRECTION}
+
+[intentTrainInfo]
+for train {DIRECTION}
+for info on {DIRECTION}
+for status on {DIRECTION} 
+about {DIRECTION}
+
+[intentSetup]
+to set code to {ALPHABET_ONE} {ALPHABET_TWO} {ALPHABET_THREE}
+to set station to {ALPHABET_ONE} {ALPHABET_TWO} {ALPHABET_THREE}
+set station code to {ALPHABET_ONE} {ALPHABET_TWO} {ALPHABET_THREE}
+to set station code to {ALPHABET_ONE} {ALPHABET_TWO} {ALPHABET_THREE}
+
