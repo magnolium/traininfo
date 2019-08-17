@@ -201,6 +201,46 @@ const handlers = {
 
     },
 
+    'intentDestinationTrains': function () {
+        const itemSlot = this.event.request.intent.slots.STATION;
+        let itemName = "?";
+        if (itemSlot && itemSlot.value) {
+            itemName = itemSlot.value.toLowerCase();
+        }
+
+        base_options.body.deviceid = this.event.context.System.device.deviceId;
+
+        httpPost(this, base_options, (baseResult) => {
+            options.body.action = "ALLGOING";
+            options.body.deviceid = this.event.context.System.device.deviceId;
+            options.body.from = baseResult.name.toLowerCase();
+            options.body.to = itemName;
+
+            httpPost(this, options, (myResult) => {
+                let speechOutput = myResult.speech;
+                this.attributes.lastSpeech = speechOutput;
+                this.emit(':ask', speechOutput + " Would you like me to repeat this?");
+                this.emit(':responseReady');
+            });
+            
+        });
+
+    },
+
+    'AMAZON.RepeatIntent': function () { 
+        this.emit(':ask', this.attributes.lastSpeech + " Would you like me to repeat this?").listen("Would you like me to repeat this?"); 
+        this.emit(':responseReady'); 
+    },
+
+    'AMAZON.YesIntent': function () { 
+        this.emit(':ask', this.attributes.lastSpeech + " Would you like me to repeat this?").listen("Would you like me to repeat this?"); 
+    }, 
+    
+    'AMAZON.NoIntent': function () { 
+        this.response.speak("Thank you"); 
+        this.emit(':responseReady'); 
+    }, 
+
     'intentTrainInfo': function () {
         const itemSlot = this.event.request.intent.slots.DIRECTION;
         let itemName = "?";
