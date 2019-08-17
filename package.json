@@ -1,0 +1,13 @@
+{
+  "name": "alexa-skill-kit-sdk-factskill",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "alexa-sdk": "^1.0.10",
+    "jmespath": "^0.15.0",
+    "mongodb": "^3.0.5",
+    "national-rail-darwin": "^1.0.8",
+    "request-promise": "^4.2.2",
+    "sshpk": "^1.16.1"
+  }
+}

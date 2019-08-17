@@ -1,0 +1,27 @@
+To get started you need to enable the skill on your Alexa
+using the mobile app then enable it on the device with (and I'm guessing here)
+"Alexa. Enable Skill Darwin".
+
+Then you have to setup your base station using the CRS (3-char) code.
+e.g Worthing is "WRH" Brighton "BTN"
+
+"Alexa. Ask DARWIN <to set code to B M H" 
+for Bournemouth.
+
+All calls to DARWIN will then use Bournemouth station as your depature station.
+
+"Alexa. Ask DARWIN <what is the next train to {STATION}>
+"Alexa. Ask DARWIN <when is the next train to {STATION}>
+"Alexa. Ask DARWIN <when is the next train to {STATION}>
+
+"Alexa. Ask DARWIN <about DEPARTURES>"
+"Alexa. Ask DARWIN <about ARRIVALS>"
+
+"Alexa. Ask DARWIN <for info on DEPARTURES>"
+"Alexa. Ask DARWIN <for info on ARRIVALS>"
+
+"Alexa. Ask DARWIN <for train DEPARTURES>"
+"Alexa. Ask DARWIN <for train ARRIVALS>"
+
+"Alexa. Ask DARWIN <for status on DEPARTURES>"
+"Alexa. Ask DARWIN <for status on ARRIVALS>"
