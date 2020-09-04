@@ -5,7 +5,7 @@
   "dependencies": {
     "alexa-sdk": "^1.0.10",
     "jmespath": "^0.15.0",
-    "mongodb": "^3.0.5",
+    "mongodb": "^3.1.13",
     "national-rail-darwin": "^1.0.8",
     "request-promise": "^4.2.2",
     "sshpk": "^1.16.1"
